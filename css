@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121212; /* Dark background */
+  color: #e4e4e4; /* Light text for readability */
+}
+
+header {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #82cfff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin: 2rem 0;
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  background: #1f1f1f;
+  color: #ccc;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Robot Section */
+.robot-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.robot-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.speech-bubble {
+  position: relative;
+  background: #333;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 300px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #333;
+  border-left: 0;
+  margin-top: -10px;
+}
+
+.chat-container {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.chat-container input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background: #222;
+  color: #fff;
+}
+
+.chat-container button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #82cfff;
+  color: #000;
+  font-weight: bold;
+}
+
+.chat-container button:hover {
+  background: #50a3e1;
+}
